@@ -1,0 +1,14 @@
+{
+    "color": "red",
+    "category": "hue",
+    "type": "primary",
+    "code": {
+        "rgba": [
+            255,
+            0,
+            0,
+            1
+        ],
+        "hex": "#FF0"
+    }
+}
