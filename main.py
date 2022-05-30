@@ -1,19 +1,19 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from os import listdir, path
+from os import listdir
 from resources.findings.findingToJson import createJSON, combineJSON
 from time import sleep
-
-# from json import dump, load
+from utils.file import viewFile
 
 st.title("Dashboard")
-
 st.subheader("Visualizer")
 
+# dataset
 xls = pd.ExcelFile("./resources/xlsx/output.xlsx")
 df = pd.read_excel(xls)
 
+# path to json files
 jsonPath = "./resources/findings/"
 
 
@@ -22,24 +22,19 @@ subjects = df.Subject.unique()
 subjects = sorted(subjects)
 excluded_subjects = []
 
-# sidebar elements
+# sidebar
 
 # filter by subject
 st.sidebar.header("Filter")
 subject_choice = st.sidebar.selectbox("Subject:", subjects)
 
 
-# subject = df["Subject"] = subject_choice
+# display the Dataframe
 df.loc[df.Subject == subject_choice]
 
 # view json file
 files = listdir(path.join(jsonPath, "json"))
 file_choice = st.sidebar.selectbox("Data:", files)
-
-
-def viewFile(_path, _file):
-    with open(path.join(_path, _file)) as fp:
-        return fp.read()
 
 
 st.sidebar.json(viewFile(path.join(jsonPath, "json"), file_choice), expanded=False)
@@ -67,7 +62,7 @@ if compile_file:
     with st.spinner("Writing to file.."):
         sleep(2)
     combineJSON()
-    st.sidebar.success("Compiled files")
+    st.sidebar.success("Compiled file")
 
 
 with st.expander(f"Compiled data ({len(files)})"):
