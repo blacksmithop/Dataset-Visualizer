@@ -1,0 +1,94 @@
+[
+    {
+        "subject": "Adherence",
+        "data": {
+            "description": "Extent to which a person's behaviour, taking medication,  corresponds with a health care providers reccomendation",
+            "keywords": [
+                "relapse",
+                "therapy",
+                "cost"
+            ]
+        }
+    },
+    {
+        "subject": "ADME",
+        "data": {
+            "description": "absorption, distribution, metabolism, and excretion",
+            "keywords": [
+                "therapy ",
+                "pharmacokinetic",
+                "genome"
+            ]
+        }
+    },
+    {
+        "subject": "Administration",
+        "data": {
+            "description": "Inject into a vein or into an IV line",
+            "keywords": [
+                "inject",
+                "adherence"
+            ]
+        }
+    },
+    {
+        "subject": "AEs - autoimmunity",
+        "data": {
+            "description": "Immune system mistakes and attacks the body's own tissues, organs",
+            "keywords": [
+                "efficacy",
+                "thyroid",
+                "placebo"
+            ]
+        }
+    },
+    {
+        "subject": "AEs - Infections",
+        "data": {
+            "description": "The invasion and growth of germs in the body",
+            "keywords": [
+                "treatment",
+                "placebo",
+                "immunity"
+            ]
+        }
+    },
+    {
+        "subject": "AEs - lymphopenia",
+        "data": {
+            "description": "A disorder in which your blood doesn't have enough white blood cells called lymphocytes",
+            "keywords": [
+                "antibodies",
+                "immune system",
+                "interferon"
+            ]
+        }
+    },
+    {
+        "subject": "AEs - malignancy",
+        "data": {
+            "description": "The tendency of a medical condition to become progressively worse",
+            "keywords": []
+        }
+    },
+    {
+        "subject": "AEs - systemic effects",
+        "data": {
+            "description": "Effects occurring in tissues distant from the site of contact between the body and medical device",
+            "keywords": [
+                "therapy",
+                "adherence",
+                "reduction"
+            ]
+        }
+    },
+    {
+        "subject": "Comparative efficacy",
+        "data": {
+            "description": "Research that identifies what clinical and public health interventions work best for improving health.",
+            "keywords": [
+                "review"
+            ]
+        }
+    }
+]
