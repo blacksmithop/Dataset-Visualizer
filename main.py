@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import numpy as np
 from os import listdir, path
 from resources.findings.findingToJson import createJSON, combineJSON
 from time import sleep
@@ -10,14 +11,15 @@ st.title("Dashboard")
 
 st.subheader("Visualizer")
 
-df = pd.read_csv("./resources/csv/plato_sanitized.csv")
+xls = pd.ExcelFile("./resources/xlsx/output.xlsx")
+df = pd.read_excel(xls)
 
 jsonPath = "./resources/findings/"
 
 
 # list of subjects
 subjects = df.Subject.unique()
-
+subjects = sorted(subjects)
 excluded_subjects = []
 
 # sidebar elements
@@ -27,8 +29,8 @@ st.sidebar.header("Filter")
 subject_choice = st.sidebar.selectbox("Subject:", subjects)
 
 
-subject = df["Subject"] = subject_choice
-
+# subject = df["Subject"] = subject_choice
+df.loc[df.Subject == subject_choice]
 
 # view json file
 files = listdir(path.join(jsonPath, "json"))
@@ -57,32 +59,16 @@ if save_file:
         with st.spinner("Creating file.."):
             sleep(1)
             createJSON(fileName=file_name)
-    st.sidebar.error("Filename must be a subject")
+            st.sidebar.success("File created")
+    else:
+        st.sidebar.error("Filename must be a subject")
 
 if compile_file:
     with st.spinner("Writing to file.."):
         sleep(2)
     combineJSON()
+    st.sidebar.success("Compiled files")
 
-# pass the dataframe
-final_df = df[["Subject", "Journal Abstract Text"]]
-
-
-# pagination
-N = 15
-page_num = 0
-page_last = len(final_df) // N
-
-col1, col2, col3 = st.columns(3)
-with col1:
-    st.button(label="<")
-with col2:
-    st.text(page_num)
-with col3:
-    st.button(label=">")
-
-
-st.dataframe(data=final_df, width=500, height=500)
 
 with st.expander(f"Compiled data ({len(files)})"):
     st.json(viewFile("./resources/findings/", "full-data.json"), expanded=False)

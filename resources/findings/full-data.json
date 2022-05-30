@@ -6,7 +6,10 @@
             "keywords": [
                 "relapse",
                 "therapy",
-                "cost"
+                "cost",
+                "Teriflunomide",
+                "RMS",
+                "daily"
             ]
         }
     },
@@ -17,7 +20,9 @@
             "keywords": [
                 "therapy ",
                 "pharmacokinetic",
-                "genome"
+                "genome",
+                "effects",
+                "interruption"
             ]
         }
     },
@@ -27,7 +32,10 @@
             "description": "Inject into a vein or into an IV line",
             "keywords": [
                 "inject",
-                "adherence"
+                "adherence",
+                "untreated",
+                "autoinjector",
+                "device"
             ]
         }
     },
@@ -119,9 +127,118 @@
         }
     },
     {
+        "subject": "",
+        "data": {
+            "description": "",
+            "keywords": [
+                "DMD",
+                "tolerability",
+                "natalizumab"
+            ]
+        }
+    },
+    {
+        "subject": "Effects on cognition",
+        "data": {
+            "description": "Effect of early initiation of therapy",
+            "keywords": [
+                "CIS",
+                "subcutaneous",
+                "infusions"
+            ]
+        }
+    },
+    {
+        "subject": "Effects on disability progression",
+        "data": {
+            "description": "Effects on disability progression",
+            "keywords": [
+                "subcutaneous",
+                "natalizumab",
+                "relapse",
+                "routine",
+                "efficacy"
+            ]
+        }
+    },
+    {
+        "subject": "Effects on disease progression/activity",
+        "data": {
+            "description": "Effects on disease progression/activity",
+            "keywords": [
+                "PRISMS",
+                "proportion",
+                "PML",
+                "MS",
+                "tablets"
+            ]
+        }
+    },
+    {
+        "subject": "Effects on mortality",
+        "data": {
+            "description": "Effects on mortality",
+            "keywords": [
+                "effects",
+                "beta-1b",
+                "duration",
+                "assesment",
+                "efficacy"
+            ]
+        }
+    },
+    {
         "subject": "Effects on MRI activity/outcomes",
         "data": {
             "description": "Measure the small changes in blood flow that occur with brain activity.",
+            "keywords": [
+                "influence",
+                "effectiveness",
+                "symptoms"
+            ]
+        }
+    },
+    {
+        "subject": "Effects on psychological measures",
+        "data": {
+            "description": "Effects on psychological measures",
+            "keywords": [
+                "GA",
+                "once-daily",
+                "Fingolimod",
+                "observation",
+                "remit"
+            ]
+        }
+    },
+    {
+        "subject": "Effects on QoL and functional outcomes",
+        "data": {
+            "description": "Patient's ability to enjoy normal life activities",
+            "keywords": [
+                "relapse",
+                "cognition",
+                "fatigue"
+            ]
+        }
+    },
+    {
+        "subject": "Effects on sensory, motor and visual symptoms",
+        "data": {
+            "description": "Effects on sensory, motor and visual symptoms",
+            "keywords": [
+                "MM",
+                "difficulty",
+                "pain",
+                "interferon",
+                "mitoxantrone"
+            ]
+        }
+    },
+    {
+        "subject": "Epidemiology",
+        "data": {
+            "description": "Epidemiology",
             "keywords": []
         }
     }
