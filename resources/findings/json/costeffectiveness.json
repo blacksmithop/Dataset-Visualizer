@@ -1,7 +1,11 @@
 {
-    "subject": "",
+    "subject": "Cost Effectiveness",
     "data": {
-        "description": "",
-        "keywords": []
+        "description": "Examine both the costs and health outcomes of one or more interventions",
+        "keywords": [
+            "treatment",
+            "doses",
+            "data"
+        ]
     }
 }

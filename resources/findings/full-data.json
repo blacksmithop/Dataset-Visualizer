@@ -68,7 +68,11 @@
         "subject": "AEs - malignancy",
         "data": {
             "description": "The tendency of a medical condition to become progressively worse",
-            "keywords": []
+            "keywords": [
+                "antibodies",
+                "imaging",
+                "safety"
+            ]
         }
     },
     {
@@ -87,8 +91,38 @@
         "data": {
             "description": "Research that identifies what clinical and public health interventions work best for improving health.",
             "keywords": [
-                "review"
+                "review",
+                "incidence"
             ]
+        }
+    },
+    {
+        "subject": "Cost Effectiveness",
+        "data": {
+            "description": "Examine both the costs and health outcomes of one or more interventions",
+            "keywords": [
+                "treatment",
+                "doses",
+                "data"
+            ]
+        }
+    },
+    {
+        "subject": "Drug interactions",
+        "data": {
+            "description": "A reaction between two (or more) drugs or between a drug and a food",
+            "keywords": [
+                "dose",
+                "gene",
+                "infusion"
+            ]
+        }
+    },
+    {
+        "subject": "Effects on MRI activity/outcomes",
+        "data": {
+            "description": "Measure the small changes in blood flow that occur with brain activity.",
+            "keywords": []
         }
     }
 ]

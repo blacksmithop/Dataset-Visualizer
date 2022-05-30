@@ -12,7 +12,7 @@ def createJSON(fileName=None):
         fileName = input("> Title: ")
 
     if not fileName:
-        print("Skipped file creation")
+        print("[INFO] Skipped file creation")
         return
 
     titleName = fileName.lower().split()
@@ -31,7 +31,7 @@ def createJSON(fileName=None):
     if not path.exists(filePath):
         with open(filePath, "w") as fp:
             dump(dataDict, fp, indent=4)
-            print(f"Created file at {filePath}")
+            print(f"[INFO] Created file at {filePath}")
 
 
 def combineJSON():
@@ -62,5 +62,5 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         exit(0)
 
-    print("Compiling data to file full-data.json")
+    print("[INFO] Compiling data to file full-data.json")
     combineJSON()

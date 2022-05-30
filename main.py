@@ -1,5 +1,3 @@
-from cmath import exp
-from numpy import kaiser
 import streamlit as st
 import pandas as pd
 from os import listdir, path
@@ -12,7 +10,7 @@ st.title("Dashboard")
 
 st.subheader("Visualizer")
 
-df = pd.read_csv("./resources/csv/sanitized.csv")
+df = pd.read_csv("./resources/csv/plato_sanitized.csv")
 
 jsonPath = "./resources/findings/"
 
@@ -38,7 +36,6 @@ file_choice = st.sidebar.selectbox("Data:", files)
 
 
 def viewFile(_path, _file):
-
     with open(path.join(_path, _file)) as fp:
         return fp.read()
 
@@ -47,8 +44,12 @@ st.sidebar.json(viewFile(path.join(jsonPath, "json"), file_choice), expanded=Fal
 
 file_name = st.sidebar.text_input(label="New file", key="file_name")
 
-save_file = st.sidebar.button(label="Create")
-compile_file = st.sidebar.button(label="Compile")
+side_col1, side_col2 = st.columns(2)
+
+with side_col1:
+    save_file = st.sidebar.button(label="Create")
+with side_col2:
+    compile_file = st.sidebar.button(label="Compile")
 
 
 if save_file:
@@ -66,7 +67,22 @@ if compile_file:
 # pass the dataframe
 final_df = df[["Subject", "Journal Abstract Text"]]
 
-st.dataframe(final_df, 500, 500)
+
+# pagination
+N = 15
+page_num = 0
+page_last = len(final_df) // N
+
+col1, col2, col3 = st.columns(3)
+with col1:
+    st.button(label="<")
+with col2:
+    st.text(page_num)
+with col3:
+    st.button(label=">")
+
+
+st.dataframe(data=final_df, width=500, height=500)
 
 with st.expander(f"Compiled data ({len(files)})"):
     st.json(viewFile("./resources/findings/", "full-data.json"), expanded=False)

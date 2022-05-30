@@ -2,6 +2,10 @@
     "subject": "AEs - malignancy",
     "data": {
         "description": "The tendency of a medical condition to become progressively worse",
-        "keywords": []
+        "keywords": [
+            "antibodies",
+            "imaging",
+            "safety"
+        ]
     }
 }
