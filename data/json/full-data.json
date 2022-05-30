@@ -1,0 +1,52 @@
+[
+    {
+        "subject": "Adherence",
+        "data": {
+            "description": "Extent to which a person's behaviour, taking medication,  corresponds with a health care providers reccomendation",
+            "keywords": [
+                "relapse",
+                "therapy",
+                "cost"
+            ]
+        }
+    },
+    {
+        "subject": "ADME",
+        "data": {
+            "description": "absorption, distribution, metabolism, and excretion",
+            "keywords": [
+                "therapy ",
+                "pharmacokinetic",
+                "genome"
+            ]
+        }
+    },
+    {
+        "subject": "Administration",
+        "data": {
+            "description": "Inject into a vein or into an IV line",
+            "keywords": [
+                "inject",
+                "adherence"
+            ]
+        }
+    },
+    {
+        "subject": "AEs - autoimmunity",
+        "data": {
+            "description": "Immune system mistakes and attacks the body's own tissues, organs",
+            "keywords": [
+                "efficacy",
+                "thyroid",
+                "placebo"
+            ]
+        }
+    },
+    {
+        "subject": "AEs - Infections",
+        "data": {
+            "description": "",
+            "keywords": []
+        }
+    }
+]
