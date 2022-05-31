@@ -1,7 +1,6 @@
 # Dataset Visualizer
 
 | Installation |
-
 |---|
 
 ```bash
@@ -13,7 +12,6 @@ pipenv install
 ```
 
 | Running |
-
 |---|
 
 ```bash
