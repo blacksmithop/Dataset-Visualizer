@@ -1,11 +1,14 @@
 {
-    "subject": "",
+    "subject": "Effects on clinical relapses",
     "data": {
-        "description": "",
+        "description": "return of a disease or the signs and symptoms of a disease after a period of improvement",
         "keywords": [
             "DMD",
             "tolerability",
-            "natalizumab"
+            "natalizumab",
+            "reduced",
+            "IFNB-1b",
+            "GA"
         ]
     }
 }

@@ -1,10 +1,8 @@
-from os import listdir, path, remove, walk, getcwd
+from os import listdir, path, remove
 from json import dump, load
 from re import sub
 
 dir = "./resources/findings/json"  # directory where data is to be stored
-
-print(getcwd())
 
 
 def createJSON(fileName=None):
@@ -46,7 +44,6 @@ def combineJSON():
             remove(_fileName)
         except OSError as e:
             print(e.strerror)
-            print(e.code)
 
     with open(_fileName, "w") as fp:
         dump(combinedDict, fp, indent=4)
@@ -54,9 +51,6 @@ def combineJSON():
 
 if __name__ == "__main__":
 
-    # _, _, files = next(walk(f"{dir}/json"))
-    # file_count = len(files)
-    # print("Files in /data/ :", file_count)
     try:
         createJSON()
     except KeyboardInterrupt:

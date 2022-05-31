@@ -1,0 +1,14 @@
+{
+    "subject": "Dose",
+    "data": {
+        "description": "a quantity of medicine prescribed to be taken at one time",
+        "keywords": [
+            "dose",
+            "dosage",
+            "mg",
+            "treatment",
+            "PRISMS",
+            "Subcutaneous"
+        ]
+    }
+}

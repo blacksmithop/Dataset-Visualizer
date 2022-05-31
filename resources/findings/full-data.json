@@ -57,7 +57,24 @@
             "keywords": [
                 "treatment",
                 "placebo",
-                "immunity"
+                "immunity",
+                "PML",
+                "CNS",
+                "NAT",
+                "KPS"
+            ]
+        }
+    },
+    {
+        "subject": "AEs - ISRs/IARs",
+        "data": {
+            "description": "gradual re-narrowing of a stented coronary artery lesion due to arterial damage",
+            "keywords": [
+                "QoL",
+                "anti-CD52",
+                "antibody",
+                "CD20",
+                "mAB"
             ]
         }
     },
@@ -68,7 +85,11 @@
             "keywords": [
                 "antibodies",
                 "immune system",
-                "interferon"
+                "interferon",
+                "BG-12",
+                "Oral",
+                "multiple-ascending-dose",
+                "ponesimod"
             ]
         }
     },
@@ -79,7 +100,11 @@
             "keywords": [
                 "antibodies",
                 "imaging",
-                "safety"
+                "safety",
+                "postmarketing",
+                "RRMS",
+                "AEs",
+                "interim "
             ]
         }
     },
@@ -90,7 +115,10 @@
             "keywords": [
                 "therapy",
                 "adherence",
-                "reduction"
+                "reduction",
+                "Mitoxantrone",
+                "cardiotoxicity",
+                "LVEF"
             ]
         }
     },
@@ -100,7 +128,12 @@
             "description": "Research that identifies what clinical and public health interventions work best for improving health.",
             "keywords": [
                 "review",
-                "incidence"
+                "incidence",
+                "parenteral",
+                "ALT",
+                "IFNbeta-1a",
+                "Glatiramer",
+                "ARR"
             ]
         }
     },
@@ -111,7 +144,50 @@
             "keywords": [
                 "treatment",
                 "doses",
-                "data"
+                "data",
+                "subcutaneous",
+                "natalizumab"
+            ]
+        }
+    },
+    {
+        "subject": "Diagnosis and assessment",
+        "data": {
+            "description": "the process of determining which disease or condition explains a person's symptoms and signs",
+            "keywords": [
+                "alemtuzumab",
+                "MRSI",
+                "RNFL",
+                "OCT",
+                "Alemtuzumab",
+                "CD52"
+            ]
+        }
+    },
+    {
+        "subject": "Discontinuations",
+        "data": {
+            "description": "the ceasing of a medication treatment for a patient by either the clinician or the patient themself",
+            "keywords": [
+                "diagnosis",
+                "BG-12",
+                "safety profile",
+                "AEs",
+                "placebo"
+            ]
+        }
+    },
+    {
+        "subject": "Dose",
+        "data": {
+            "description": "a quantity of medicine prescribed to be taken at one time",
+            "keywords": [
+                "dose",
+                "dosage",
+                "mg",
+                "treatment",
+                "PRISMS",
+                "Subcutaneous"
             ]
         }
     },
@@ -122,18 +198,24 @@
             "keywords": [
                 "dose",
                 "gene",
-                "infusion"
+                "infusion",
+                "AUClast",
+                "model based approach",
+                "Fingolimod "
             ]
         }
     },
     {
-        "subject": "",
+        "subject": "Effects on clinical relapses",
         "data": {
-            "description": "",
+            "description": "return of a disease or the signs and symptoms of a disease after a period of improvement",
             "keywords": [
                 "DMD",
                 "tolerability",
-                "natalizumab"
+                "natalizumab",
+                "reduced",
+                "IFNB-1b",
+                "GA"
             ]
         }
     },
@@ -144,7 +226,10 @@
             "keywords": [
                 "CIS",
                 "subcutaneous",
-                "infusions"
+                "infusions",
+                "TYSABRI",
+                "infusions",
+                "DemTect"
             ]
         }
     },
@@ -194,7 +279,12 @@
             "keywords": [
                 "influence",
                 "effectiveness",
-                "symptoms"
+                "symptoms",
+                "EAE",
+                "ARBs",
+                "PreCISe",
+                "interfero beta",
+                "placebo"
             ]
         }
     },
@@ -218,7 +308,10 @@
             "keywords": [
                 "relapse",
                 "cognition",
-                "fatigue"
+                "fatigue",
+                "progression",
+                "pivotal",
+                "SENTINEL"
             ]
         }
     },
@@ -244,7 +337,134 @@
                 "segregation",
                 "background",
                 "randomized",
-                ""
+                "dysfunction"
+            ]
+        }
+    },
+    {
+        "subject": "Gene expression",
+        "data": {
+            "description": "process by which the instructions in our DNA are converted into a functional product",
+            "keywords": [
+                "interferon",
+                "microRNAs",
+                "Laquinimod",
+                "PBMC",
+                "immunomodulator",
+                "samples"
+            ]
+        }
+    },
+    {
+        "subject": "General adverse events",
+        "data": {
+            "description": "event in which care resulted in an undesirable clinical outcome",
+            "keywords": [
+                "teriflunomide",
+                "treatment",
+                "doses",
+                "RMS",
+                "pain",
+                "GA"
+            ]
+        }
+    },
+    {
+        "subject": "General safety profile",
+        "data": {
+            "description": "Chemistry, pharmacology, therapeutic effects, and adverse effects of an administered drug",
+            "keywords": [
+                "relapse",
+                "ULN",
+                "parenteral",
+                "therapy",
+                "birth defect",
+                "delay"
+            ]
+        }
+    },
+    {
+        "subject": "Health-care resource utilisation",
+        "data": {
+            "description": "quantification or description of the use of services by persons for the purpose of preventing and curing health problems",
+            "keywords": [
+                "IV",
+                "corticosteroids",
+                "sequelae",
+                "relapse",
+                "EDSS",
+                "dimethyl fumarate",
+                "MS"
+            ]
+        }
+    },
+    {
+        "subject": "Immunogenicity/NAbs and effects on clinical outcomes",
+        "data": {
+            "description": "The ability of cells/tissues to provoke an immune response",
+            "keywords": [
+                "IFNbeta",
+                "NAbs",
+                "NKT",
+                "PBMC",
+                "intramuscularly"
+            ]
+        }
+    },
+    {
+        "subject": "indiacation for use",
+        "data": {
+            "description": "The Indications and Usage section must state that the drug is indicated for the treatment, prevention, mitigation, cure, or diagnosis of a recognized disease or condition",
+            "keywords": [
+                "therapy",
+                "TEMSO",
+                "oral disease modifier",
+                "oral disease-modifying therapy",
+                "DMT",
+                "cholestyramine",
+                "Interferon-beta-1b",
+                "Interferon-beta-1a",
+                "Gilenya",
+                "Fingolimod",
+                "has been an approved",
+                "long-lasting suppression of disease activity"
+            ]
+        }
+    },
+    {
+        "subject": "SAEs",
+        "data": {
+            "description": "any untoward medical occurrence that at any dose. Results in death. Is life-threatening",
+            "keywords": [
+                "Teriflunomide",
+                "Injection-site pain",
+                "injection-site reactions",
+                "ISP",
+                "ISR",
+                "lymphopenia",
+                "ONO-4641",
+                "double-blind trial",
+                "blind trial",
+                "Adverse events",
+                "hypertension"
+            ]
+        }
+    },
+    {
+        "subject": "Unmet needs",
+        "data": {
+            "description": "a condition for which there exists no. satisfactory method of diagnosis, prevention or treatment in the Union. or, even if such a method exists, in relation to which the medicinal",
+            "keywords": [
+                "fingolimod",
+                "TYSABRI",
+                "STRATA",
+                "Fingolimod",
+                "FTY720",
+                "Natalizumab",
+                "identify",
+                "glatiramer acetate",
+                "GA",
+                "treatment"
             ]
         }
     }

@@ -1,7 +1,14 @@
 {
-    "subject": "",
+    "subject": "General safety profile",
     "data": {
-        "description": "",
-        "keywords": []
+        "description": "Chemistry, pharmacology, therapeutic effects, and adverse effects of an administered drug",
+        "keywords": [
+            "relapse",
+            "ULN",
+            "parenteral",
+            "therapy",
+            "birth defect",
+            "delay"
+        ]
     }
 }

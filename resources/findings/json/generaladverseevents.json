@@ -1,7 +1,14 @@
 {
-    "subject": "",
+    "subject": "General adverse events",
     "data": {
-        "description": "",
-        "keywords": []
+        "description": "event in which care resulted in an undesirable clinical outcome",
+        "keywords": [
+            "teriflunomide",
+            "treatment",
+            "doses",
+            "RMS",
+            "pain",
+            "GA"
+        ]
     }
 }

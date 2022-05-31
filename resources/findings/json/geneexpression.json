@@ -1,7 +1,14 @@
 {
-    "subject": "",
+    "subject": "Gene expression",
     "data": {
-        "description": "",
-        "keywords": []
+        "description": "process by which the instructions in our DNA are converted into a functional product",
+        "keywords": [
+            "interferon",
+            "microRNAs",
+            "Laquinimod",
+            "PBMC",
+            "immunomodulator",
+            "samples"
+        ]
     }
 }
