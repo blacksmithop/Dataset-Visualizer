@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from os import listdir
+from os import listdir, path
 from resources.findings.findingToJson import createJSON, combineJSON
 from time import sleep
 from utils.file import viewFile
@@ -30,7 +30,7 @@ subject_choice = st.sidebar.selectbox("Subject:", subjects)
 
 
 # display the Dataframe
-df.loc[df.Subject == subject_choice]
+df.loc[df.Subject == subject_choice][["Subject", "Abstract Summary"]]
 
 # view json file
 files = listdir(path.join(jsonPath, "json"))
@@ -54,6 +54,7 @@ if save_file:
         with st.spinner("Creating file.."):
             sleep(1)
             createJSON(fileName=file_name)
+
             st.sidebar.success("File created")
     else:
         st.sidebar.error("Filename must be a subject")
