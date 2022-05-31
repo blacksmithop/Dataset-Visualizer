@@ -1,3 +1,4 @@
+from attr import field
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -39,9 +40,15 @@ df_view = df.loc[df.Subject == subject_choice]
 # grid options
 builder = GridOptionsBuilder.from_dataframe(df[for_cols])
 builder.configure_selection(selection_mode="single")
+
 builder.configure_pagination(
     enabled=True, paginationAutoPageSize=True, paginationPageSize=10
 )
+builder.configure_default_column(
+    min_column_width=20, resizable=True, wrapText=True, autoHeight=True
+)
+builder.configure_column(field="Abstract Summary", header_name="Summary")
+
 go = builder.build()
 
 AgGrid(dataframe=df_view, editable=False, height=500, theme="dark", gridOptions=go)
