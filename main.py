@@ -39,7 +39,7 @@ df_view = df.loc[df.Subject == subject_choice]
 
 # grid options
 builder = GridOptionsBuilder.from_dataframe(df[for_cols])
-builder.configure_selection(selection_mode="single")
+# builder.configure_selection(selection_mode="single")
 
 builder.configure_pagination(
     enabled=True, paginationAutoPageSize=True, paginationPageSize=10
